@@ -86,16 +86,6 @@ npx serve .
 
 Depois abra o endereço indicado no navegador.
 
-## Publicar
+---
 
-Com o [Firebase CLI](https://firebase.google.com/docs/cli) instalado e autenticado:
-
-```bash
-firebase deploy
-```
-
-Isso publica o site e as regras do Firestore. Para publicar apenas um deles, use `firebase deploy --only hosting` ou `firebase deploy --only firestore:rules`.
-
-## Criar uma administradora
-
-O app não cria administradores. Para promover alguém, adicione no console do Firebase um documento na coleção `admins` cujo ID seja o UID da pessoa.
+Acesse o clube em **[clube-livro.web.app](https://clube-livro.web.app)**
