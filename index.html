@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clube do Livro Princesas de Jesus</title>
+<meta name="description" content="Um clube do livro para meninas ler, orar e crescer juntas. Venha participar.">
+<meta name="theme-color" content="#161a10">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda:ital,wght@1,700&family=Caveat:wght@500;700&family=Chonburi&family=Cinzel+Decorative:wght@900&family=Limelight&family=Playfair+Display:wght@900&family=Pinyon+Script&family=Rye&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%93%96%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="landing.css">
+</head>
+<body>
+<a class="login" href="app.html">Entrar</a>
+
+<main>
+  <div class="scroller" id="scroller">
+    <div class="stage" id="stage">
+      <div class="sparkfield" id="sparkfield" aria-hidden="true"></div>
+      <div class="scene">
+        <div class="shadow" aria-hidden="true"></div>
+
+        <div class="flyers" id="flyers" aria-hidden="true"></div>
+
+        <div class="book" id="book">
+          <!-- contracapa / última página -->
+          <div class="base">
+            <div class="board"></div>
+            <div class="paper right pg" data-spread="3">
+              <div class="halo"></div>
+              <div class="stk" style="left:30%;top:6%;width:40%;--r:-6deg;--d:.1s" data-art="crown"></div>
+              <h2 class="script big" style="top:30%">Seu lugar já está guardado</h2>
+              <p class="hand" style="top:52%">Leia um pouquinho por dia, anote o que Deus falar ao seu coração e caminhe com outras meninas.</p>
+              <div class="stk" style="left:3%;top:79%;width:17%;--r:-8deg;--d:.35s" data-art="orchid"></div>
+              <div class="stk" style="left:74%;top:72%;width:19%;--r:6deg;--d:.5s" data-art="lamb"></div>
+              <i class="spark" style="left:80%;top:20%"></i><i class="spark" style="left:16%;top:30%;--t:1.3s"></i>
+            </div>
+          </div>
+
+          <!-- folha 2: frente = Jesus abraçando | verso = Como funciona -->
+          <div class="leaf" data-leaf="2">
+            <div class="face front paper right pg" data-spread="2">
+              <div class="halo big"></div>
+              <div class="stk hug" style="left:8%;top:9%;width:84%;--r:-1deg;--d:.05s" data-art="hug"></div>
+              <p class="hand" style="top:84%">Ele te abraça, filha.</p>
+              <i class="spark" style="left:10%;top:12%"></i><i class="spark" style="left:86%;top:20%;--t:1.5s"></i><i class="spark" style="left:78%;top:60%;--t:2.1s"></i>
+            </div>
+            <div class="face back paper left pg" data-spread="3">
+              <h2 class="script" style="top:7%">Como funciona</h2>
+              <ol class="steps">
+                <li><b>1</b><span>Leia suas páginas do dia. O cronograma é gerado sozinho.</span></li>
+                <li><b>2</b><span>Responda as 3 perguntas: o que me marcou, o que aprendi, pelo que quero orar.</span></li>
+                <li><b>3</b><span>Marque o check e veja o clube avançar junto com você.</span></li>
+              </ol>
+              <div class="stk" style="left:66%;top:78%;width:26%;--r:8deg;--d:.4s" data-art="starGold"></div>
+            </div>
+          </div>
+
+          <!-- folha 1: frente = Escolhida | verso = Filha amada -->
+          <div class="leaf" data-leaf="1">
+            <div class="face front paper right pg" data-spread="1">
+              <div class="halo"></div>
+              <div class="ransom" data-ransom="ESCO|LHIDA" style="top:15%" aria-hidden="true"></div>
+              <p class="hand" style="top:60%">Você foi escolhida.</p>
+              <div class="stk" style="left:66%;top:3%;width:26%;--r:12deg;--d:.7s" data-art="starGold"></div>
+              <div class="stk" style="left:4%;top:68%;width:20%;--r:-10deg;--d:.8s" data-art="starBlue"></div>
+              <i class="spark" style="left:12%;top:8%"></i><i class="spark" style="left:90%;top:50%;--t:1.7s"></i><i class="spark" style="left:48%;top:86%;--t:2.4s"></i>
+            </div>
+            <div class="face back paper left pg" data-spread="2">
+              <div class="halo"></div>
+              <div class="ransom" data-ransom="FILHA|AMADA" style="top:15%" aria-hidden="true"></div>
+              <p class="hand" style="top:60%">Amada desde sempre.</p>
+              <div class="stk" style="left:36%;top:70%;width:26%;--r:-6deg;--d:.7s" data-art="heart"></div>
+              <div class="stk" style="left:68%;top:73%;width:17%;--r:7deg;--d:.9s" data-art="fairy"></div>
+              <i class="spark" style="left:10%;top:10%;--t:1.2s"></i><i class="spark" style="left:88%;top:12%;--t:1.9s"></i>
+            </div>
+          </div>
+
+          <!-- folha 0: frente = capa | verso = guarda -->
+          <div class="leaf" data-leaf="0">
+            <div class="face front cover">
+              <div class="velvet"></div>
+              <div class="frame" id="frame"></div>
+              <div class="stk c" style="left:5%;top:5%;width:40%;--r:-6deg" data-art="moon"></div>
+              <div class="stk c" style="left:50%;top:3%;width:24%;--r:8deg" data-art="starGold"></div>
+              <div class="stk c" style="left:24%;top:14%;width:36%;--r:4deg" data-art="starBlue"></div>
+              <h1 class="covertitle">
+                <span class="sr">Clube do Livro Princesas de Jesus</span>
+                <span class="ransom" data-ransom="CLUBE" aria-hidden="true"></span>
+                <span class="do" aria-hidden="true">do</span>
+                <span class="ransom" data-ransom="LIVRO" aria-hidden="true"></span>
+                <span class="sub" aria-hidden="true">Princesas de Jesus</span>
+              </h1>
+              <div class="stk c" style="left:70%;top:75%;width:24%;--r:6deg" data-art="orchid"></div>
+              <div class="stk c" style="left:56%;top:77%;width:12%;--r:-8deg" data-art="fairy"></div>
+              <div class="stk c" style="left:7%;top:72%;width:17%;--r:-5deg" data-art="lamb"></div>
+              <i class="spark" style="left:30%;top:66%"></i><i class="spark" style="left:80%;top:30%;--t:1.6s"></i>
+            </div>
+            <div class="face back endpaper">
+              <div class="paper left pg inset" data-spread="1">
+                <p class="hand small" style="top:12%">Bem-vinda ao</p>
+                <h2 class="script big" style="top:20%">Clube do Livro Princesas de Jesus</h2>
+                <p class="hand" style="top:58%">Um lugar para ler, orar e crescer juntas. Um pouquinho a cada dia.</p>
+                <div class="stk" style="left:38%;top:80%;width:24%;--r:4deg;--d:.5s" data-art="crown"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="scrollcue" id="scrollcue" aria-hidden="true">
+        <svg class="cue-mouse" viewBox="0 0 32 52" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="3" y="3" width="26" height="46" rx="13"/><line class="wheel" x1="16" y1="12" x2="16" y2="20"/></svg>
+        <svg class="cue-swipe" viewBox="0 0 40 52" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path class="c1" d="M8 8l12 12 12-12"/><path class="c2" d="M8 24l12 12 12-12"/></svg>
+      </div>
+
+      <a class="cta" id="cta" href="app.html">Venha Participar</a>
+    </div>
+  </div>
+</main>
+<noscript><p style="text-align:center;padding:2rem"><a href="app.html" style="color:#f1d889">Venha Participar</a></p></noscript>
+
+<script type="module" src="landing.js"></script>
+</body>
+</html>
